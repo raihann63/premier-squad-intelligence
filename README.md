@@ -11,11 +11,9 @@ PitchPilot AI - Step 02: FastAPI backend (HTML/CSS/JS frontend comes next)
    .\.venv\Scripts\python.exe -m uvicorn backend.main:app --reload --host 127.0.0.1 --port 8000
 
 3) Open:
-   http://127.0.0.1:8000/health
-   http://127.0.0.1:8000/api/teams
-   http://127.0.0.1:8000/docs
+https://raihann63.github.io/premier-squad-intelligence/
 
-4) In /docs > POST /api/predict > Try it out, enter:
+5) In /docs > POST /api/predict > Try it out, enter:
    {
      "team": "Arsenal",
      "manager": "Mikel Arteta",
@@ -23,12 +21,12 @@ PitchPilot AI - Step 02: FastAPI backend (HTML/CSS/JS frontend comes next)
      "bench": { "GK": 0, "DEF": 2, "MID": 2, "FWD": 1 }
    }
 
-5) If you see a startup error about required columns in player_data.csv,
+6) If you see a startup error about required columns in player_data.csv,
    that means this CSV differs from the newer notebook's merged dataset.
    Do not create dummy columns or fake predictions. Export the updated
    notebook's final_merged into data/player_data.csv after verifying the source.
 
-6) Reply with the /health JSON and /api/predict status/output (or error) so
+7) Reply with the /health JSON and /api/predict status/output (or error) so
    the next step can connect your frontend without breaking existing files.
 
 API notes:
