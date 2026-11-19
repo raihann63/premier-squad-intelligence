@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#0c1014" name="theme-color"/>
+<meta content="Premier Squad Intelligence — Explore historical English Premier League performance, analyse players, and build AI-ranked squads with Stacking Ensemble models." name="description"/>
+<title>Premier Squad Intelligence | EPL Overview</title>
+<link href="style.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
+</head>
+<body data-page="overview">
+<svg aria-hidden="true" class="svg-sprite" xmlns="http://www.w3.org/2000/svg">
+<symbol id="ic-ball" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="m12 8 4 3-1.5 4.5h-5L8 11l4-3Zm-4 3-4-1m12 1 4-1m-5.5 5.5 2 3.5m-7-3.5-2 3.5M12 8V3"></path></symbol>
+<symbol id="ic-dashboard" viewbox="0 0 24 24"><rect height="7" rx="1.5" width="7" x="3" y="3"></rect><rect height="7" rx="1.5" width="7" x="14" y="3"></rect><rect height="7" rx="1.5" width="7" x="3" y="14"></rect><rect height="7" rx="1.5" width="7" x="14" y="14"></rect></symbol>
+<symbol id="ic-pitch" viewbox="0 0 24 24"><rect height="18" rx="2" width="18" x="3" y="3"></rect><path d="M3 12h18M8 3v5h8V3M8 21v-5h8v5"></path><circle cx="12" cy="12" r="3"></circle></symbol>
+<symbol id="ic-users" viewbox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M16 3.2a4 4 0 0 1 0 7.6M23 21v-2a4 4 0 0 0-3-3.9"></path><circle cx="8.5" cy="7" r="4"></circle></symbol>
+<symbol id="ic-chart" viewbox="0 0 24 24"><path d="M4 20h16M6 17v-6M12 17V5M18 17V9" stroke-linecap="round"></path></symbol>
+<symbol id="ic-arrow" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"></path></symbol>
+<symbol id="ic-spark" viewbox="0 0 24 24"><path d="m12 2 2.3 7.7L22 12l-7.7 2.3L12 22l-2.3-7.7L2 12l7.7-2.3L12 2Z"></path></symbol>
+<symbol id="ic-search" viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></symbol>
+<symbol id="ic-copy" viewbox="0 0 24 24"><rect height="12" rx="2" width="12" x="8" y="8"></rect><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"></path></symbol>
+<symbol id="ic-print" viewbox="0 0 24 24"><path d="M7 8V3h10v5M7 17H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><path d="M7 14h10v7H7z"></path></symbol>
+<symbol id="ic-refresh" viewbox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2 6M20 4v7h-7"></path></symbol>
+<symbol id="ic-check" viewbox="0 0 24 24"><path d="m4 12 5 5L20 6"></path></symbol>
+<symbol id="ic-info" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6m0-10v1"></path></symbol>
+<symbol id="ic-shield" viewbox="0 0 24 24"><path d="m12 2 9 4v6c0 5-3.2 8.2-9 10-5.8-1.8-9-5-9-10V6l9-4Z"></path><path d="m8 12 3 3 5-6"></path></symbol>
+<symbol id="ic-menu" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></symbol>
+<symbol id="ic-close" viewbox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"></path></symbol>
+<symbol id="ic-database" viewbox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v7c0 1.7 4 3 9 3s9-1.3 9-3V5M3 12v7c0 1.7 4 3 9 3s9-1.3 9-3v-7"></path></symbol>
+</svg>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="app-shell">
+<aside aria-label="Main navigation" class="sidebar" id="sidebar">
+<div class="brand"><span class="brand-icon"><svg class="icon"><use href="#ic-ball"></use></svg></span><span class="brand-text" style="font-size:16px;letter-spacing:-.6px">Premier <b>Squad</b><small>INTELLIGENCE</small></span><button aria-label="Close menu" class="mobile-close icon-button" id="closeSidebar" type="button"><svg class="icon"><use href="#ic-close"></use></svg></button></div>
+<p class="nav-caption">WORKSPACE</p>
+<nav class="side-nav">
+<a aria-current="page" class="nav-item active" href="index.html"><svg class="icon"><use href="#ic-dashboard"></use></svg>Overview</a>
+<a class="nav-item" href="squad-builder.html"><svg class="icon"><use href="#ic-pitch"></use></svg>Squad Builder</a>
+<a class="nav-item" href="player-analytics.html"><svg class="icon"><use href="#ic-users"></use></svg>Player Analytics</a>
+<a class="nav-item" href="model-insights.html"><svg class="icon"><use href="#ic-chart"></use></svg>Model Insights</a>
+</nav>
+<div class="sidebar-bottom">
+<div class="project-note"><span class="note-mark"><svg class="icon"><use href="#ic-spark"></use></svg></span><span class="mini-label">THE MISSION</span><h3>Turning Football Data<br/>into Intelligence.</h3><p>Explore an independent machine-learning research platform for historical Premier League squad analysis.</p><a href="model-insights.html">How the models work <span aria-hidden="true">↗</span></a></div>
+<div class="sidebar-foot">PORTFOLIO PROJECT <span class="version">v1.0</span></div>
+</div>
+</aside>
+<div class="menu-backdrop" hidden="" id="menuBackdrop"></div>
+<div class="workspace">
+<header class="topbar"><div class="topbar-leading"><button aria-label="Open navigation" class="icon-button menu-toggle" id="menuToggle" type="button"><svg class="icon"><use href="#ic-menu"></use></svg></button><span class="breadcrumb">Workspace <b>/</b> <strong>Overview</strong></span></div><div class="topbar-actions"><span aria-live="polite" class="server-status" id="serverStatus"><i class="status-dot pending"></i><span id="serverStatusText">Connecting to API</span></span><span class="topbar-separator"></span><span class="topbar-avatar">PS</span></div></header>
+<main class="page-main page-overview" id="main">
+<section class="hero" id="overview">
+<div class="hero-copy"><div class="eyebrow"><span class="eyebrow-dash"></span> ENGLISH PREMIER LEAGUE · AI INTELLIGENCE</div><h1>Smarter Squads.<br/><em>Powered by AI.</em></h1><p>Transform historical English Premier League player data into intelligent squad insights. Analyse player performance and generate formation-aware Starting XIs and substitute benches using Stacking Ensemble machine learning.</p><div class="hero-cta"><a class="btn btn-primary" href="squad-builder.html"><svg class="icon"><use href="#ic-spark"></use></svg>Build Your Starting XI <svg class="icon right-icon"><use href="#ic-arrow"></use></svg></a><a class="btn btn-outline" href="model-insights.html">Explore AI Models <span aria-hidden="true">↗</span></a></div></div>
+<div aria-hidden="true" class="hero-art"><div class="hero-ring ring-one"></div><div class="hero-ring ring-two"></div><svg class="hero-ball" fill="none" viewbox="0 0 240 240"><circle cx="120" cy="120" r="102"></circle><path d="m120 67 43 32-17 53H94L77 99l43-32Zm-43 32-43-11m129 11 43-11m-60 64 22 40m-74-40-22 40M120 67l-4-47M34 88 24 133m182-45 10 45M62 192l-25-7m141 7 25-7"></path><path d="M59 52 84 29M181 52l-25-23M68 198l22 18m82-18-22 18"></path></svg><div class="floating-chip floating-top"><span class="chip-dot"></span> PREMIER LEAGUE ANALYTICS</div><div class="floating-chip floating-bottom">01 / 11 <span>DATA-DRIVEN FOOTBALL</span></div></div>
+</section>
+<section aria-label="Dataset summary" class="stats-grid">
+<article class="stat-card"><span class="stat-icon shade-green"><svg class="icon"><use href="#ic-shield"></use></svg></span><span class="stat-label">Historical EPL Clubs</span><strong class="stat-value" id="teamsStat">—</strong><small>Historical Premier League club data</small></article>
+<article class="stat-card"><span class="stat-icon shade-blue"><svg class="icon"><use href="#ic-database"></use></svg></span><span class="stat-label">Player Performance Records</span><strong class="stat-value" id="rowsStat">—</strong><small>Historical observations in the dataset</small></article>
+<article class="stat-card"><span class="stat-icon shade-purple"><svg class="icon"><use href="#ic-chart"></use></svg></span><span class="stat-label">Ensemble ML Models</span><strong class="stat-value">02</strong><small>Starter &amp; substitute stacks</small></article>
+<article class="stat-card"><span class="stat-icon shade-orange"><svg class="icon"><use href="#ic-pitch"></use></svg></span><span class="stat-label">Selected ML Features</span><strong class="stat-value">15</strong><small>Selected features per target</small></article>
+</section>
+<section class="notice-strip" role="note"><svg class="icon"><use href="#ic-info"></use></svg><span><b>Independent research prototype.</b> Built from historical Premier League data—not an official league service. Models rank minutes-played proxy labels, not verified starting lineups; scores are uncalibrated and are not future-match probabilities.</span></section>
+
+
+
+<section class="panel next-step-panel"><div><span class="section-eyebrow">START EXPLORING</span><h2>Your Football Intelligence Hub</h2><p>Explore historical Premier League data, generate AI-ranked squads, analyse player performance, and understand the machine learning models behind each selection.</p></div><div class="next-step-links"><a class="btn btn-primary" href="squad-builder.html">Build Your Starting XI <span aria-hidden="true">→</span></a><a class="btn btn-outline" href="model-insights.html">Explore AI Models</a></div></section><footer class="footer"><span><strong>Premier Squad Intelligence</strong> · Independent Football ML Research Project</span><span>Built with HTML · CSS · JavaScript · FastAPI</span></footer>
+</main>
+</div>
+</div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+</body>
+</html>
