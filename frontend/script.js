@@ -113,7 +113,7 @@ async function initialize() {
   if (isAnalyticsPage()) restoreAnalytics();
   if (!isSquadPage()) {
     try {
-      const health = await api('/health');
+      const health = await api('/api/overview');
       if (dom('teamsStat')) dom('teamsStat').textContent = numberText(health.teams);
       if (dom('rowsStat')) dom('rowsStat').textContent = numberText(health.data_rows);
       setConnection('online', 'Inference API connected');

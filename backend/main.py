@@ -331,7 +331,7 @@ app.add_middleware(
     allow_headers=["Content-Type"],
 )
 
-
+@app.get("/api/overview")
 @app.get("/health")
 def health():
     engine = get_engine()
