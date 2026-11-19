@@ -5,7 +5,7 @@
  * Change this base URL only when deploying the FastAPI backend to an HTTPS host.
  * Never expose private model files or secrets to the browser.
  */
-const API_BASE_URL = window.PITCHPILOT_API_BASE || 'http://127.0.0.1:8000';
+const API_BASE_URL = window.PITCHPILOT_API_BASE || 'https://premier-squad-api.onrender.com';
 const POSITIONS = ['GK', 'DEF', 'MID', 'FWD'];
 const FORMATIONS = {
   '4-3-3': { GK: 1, DEF: 4, MID: 3, FWD: 3 },
