@@ -125,7 +125,8 @@ async function initialize() {
   setConnection('pending', 'Connecting to API');
   clearFormError();
   try {
-    const [health, catalog] = await Promise.all([api('/health'), api('/api/teams')]);
+    // const [health, catalog] = await Promise.all([api('/health'), api('/api/teams')]);
+    const catalog = await api('/api/teams');
     if (!Array.isArray(catalog.teams) || !Array.isArray(catalog.formations)) throw new Error('Unexpected /api/teams response format.');
     state.teams = catalog.teams;
     const saved = readSession(SELECTION_STORAGE_KEY) || {};
